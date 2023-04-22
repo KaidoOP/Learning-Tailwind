@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="bg-white dark:bg-slate-900 font-main">
+    <div class="max-w-screen-xl mx-auto">
+      <!-- header -->
+      <header class="px-2 border-b flex justify-between items-center h-14">
+        <a
+          class="uppercase font-bold text-purple-800 dark:text-purple-500"
+          href=""
+          >axmed</a
+        >
+        <nav class="hidden md:flex items-center">
+          <ul class="inline-flex items-center">
+            <li>
+              <a class="header-link" href="#">Home</a>
+            </li>
+            <li>
+              <a class="header-link" href="#">About</a>
+            </li>
+            <li>
+              <a class="header-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="inline-flex items-center">
+            <li>
+              <button class="header-btn">Login</button>
+            </li>
+            <li>
+              <button class="header-btn">Register</button>
+            </li>
+            <li>
+              <button
+                class="darkmode-btn ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring-violet-300 transition-all duration-300 dark:border-indigo-500 dark:text-indigo-500 dark:hover:bg-indigo-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    class="w-4 h-4 dark:text-white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="lightmode-btn ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring-violet-300 transition-all duration-300 dark:border-indigo-500 dark:text-indigo-500 dark:hover:bg-indigo-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    class="w-4 h-4 dark:text-white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <button class="inline-block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 dark:text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </header>
+      <!-- breadcrumbs -->
+      <div class="px-2 flex items-center">
+        <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+          <a class="breadcrumb-item" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+          </a>
+          <span class="mx-2 text-gray-500"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <a class="breadcrumb-item" href="#">News </a>
+          <span class="mx-2 text-gray-500"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <a class="breadcrumb-item" href="#">Tech </a>
+        </div>
+      </div>
+
+      <!-- banners -->
+      <section class="lg:flex px-2 lg:space-x-2">
+        <a
+          href="#"
+          class="w-full lg:w-2/3 bg-gradient-to-tr from-red-500 via-purple-500 to-blue-500 hover:to-green-600 hover:from-amber-500 transition-all duration-300 ease h-96 mb-4 relative rounded inline-block overflow-hidden"
+        >
+          <div
+            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
+          ></div>
+          <img
+            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+            src="https://www-static-blogs.operacdn.com/news/wp-content/uploads/sites/2/2016/10/sf-personalnews-baner-1.jpg"
+            alt="news"
+          />
+          <div class="p-4 absolute bottom-0 left-0 z-20">
+            <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/men/81.jpg"
+                alt="author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                <time class="text-gray-400 text-xs">14 March</time>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="w-full lg:w-1/3 bg-gradient-to-b from-purple-500 to-green-500 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
+        >
+          <div
+            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
+          ></div>
+          <img
+            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+            src="src/images/img2.jpg"
+            alt="news"
+          />
+          <div class="p-4 absolute bottom-0 left-0 z-20">
+            <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </h2>
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/men/81.jpg"
+                alt="author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                <time class="text-gray-400 text-xs">14 March</time>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <main class="lg:flex">
+        <div class="w-full lg:w-2/3">
+          <!-- post cards -->
+          <section class="px-2">
+            <div class="post-card-item">
+              <img
+                class="p-2 w-full lg:w-48 h-48 opacity-80 lg:mr-4 object-cover"
+                src="src/images/img3.jpg"
+                alt=""
+              />
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="mb-2 text-gray-700 font-bold text-2xl dark:text-slate-50"
+                  >
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet cons
+                    veritatis! Lorem ipsum dolor sit amet consectetur.
+                  </h3>
+                  <p class="text-gray-700 dark:text-slate-50">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque, maiores?
+                  </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/81.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p
+                      class="font-semibold text-gray-700 text-sm dark:text-white"
+                    >
+                      John Doe
+                    </p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card-item">
+              <img
+                class="p-2 w-full lg:w-48 h-48 opacity-80 lg:mr-4 object-cover"
+                src="src/images/img4.jpg"
+                alt=""
+              />
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="mb-2 text-gray-700 font-bold text-2xl dark:text-slate-50"
+                  >
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet cons
+                    veritatis! Lorem ipsum dolor sit amet consectetur.
+                  </h3>
+                  <p class="text-gray-700 dark:text-slate-50">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque, maiores?
+                  </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/81.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p
+                      class="font-semibold text-gray-700 text-sm dark:text-white"
+                    >
+                      John Doe
+                    </p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card-item">
+              <img
+                class="p-2 w-full lg:w-48 h-48 opacity-80 lg:mr-4 object-cover"
+                src="src/images/img5.jpg"
+                alt=""
+              />
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="mb-2 text-gray-700 font-bold text-2xl dark:text-slate-50"
+                  >
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet cons
+                    veritatis! Lorem ipsum dolor sit amet consectetur.
+                  </h3>
+                  <p class="text-gray-700 dark:text-slate-50">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque, maiores?
+                  </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/81.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p
+                      class="font-semibold text-gray-700 text-sm dark:text-white"
+                    >
+                      John Doe
+                    </p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- pagination -->
+          <div class="mt-20 mb-10">
+            <ul class="flex justify-center">
+              <li>
+                <a class="pagination-item rounded-l-lg" href="#">Prev</a>
+              </li>
+              <li>
+                <a class="pagination-item" href="#">1</a>
+              </li>
+              <li>
+                <a class="pagination-item" href="#">2</a>
+              </li>
+              <li>
+                <a
+                  class="pagination-item text-blue-600 dark:text-white dark:text-white dark:bg-blue-300 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 ease"
+                  href="#"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a class="pagination-item" href="#">4</a>
+              </li>
+              <li>
+                <a class="pagination-item" href="#">5</a>
+              </li>
+              <li>
+                <a class="pagination-item rounded-r-md" href="#">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-2"
+        >
+          <!-- topics -->
+          <div class="w-full md:w-1/2 mb-5 lg:w-full">
+            <h5
+              class="text-gray-700 uppercase text-lg mb-2 font-bold dark:text-slate-50"
+            >
+              Popular News
+            </h5>
+            <ul>
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 ease"
+              >
+                <a class="flex items-center text-gray-600" herf="#">
+                  <span
+                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"
+                  ></span>
+                  <p class="dark:text-slate-50">Vue</p>
+                  <span class="text-gray-500 ml-auto">23 articles</span>
+                </a>
+              </li>
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 ease"
+              >
+                <a class="flex items-center text-gray-600" herf="#">
+                  <span
+                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"
+                  ></span>
+                  <p class="dark:text-slate-50">Svetle</p>
+                  <span class="text-gray-500 ml-auto">23 articles</span>
+                </a>
+              </li>
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 ease"
+              >
+                <a class="flex items-center text-gray-600" herf="#">
+                  <span
+                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"
+                  ></span>
+                  <p class="dark:text-slate-50">Angular</p>
+                  <span class="text-gray-500 ml-auto">23 articles</span>
+                </a>
+              </li>
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 ease"
+              >
+                <a class="flex items-center text-gray-600" herf="#">
+                  <span
+                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"
+                  ></span>
+                  <p class="dark:text-slate-50">React</p>
+                  <span class="text-gray-500 ml-auto">23 articles</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-full">
+            <!-- divider -->
+            <div class="border border-dotted md:hidden lg:block"></div>
+            <!-- subscribe -->
+            <div class="my-5 md:my-0 lg:my-5">
+              <h5
+                class="text-lg uppercase text-gray-700 mb-2 dark:text-slate-50"
+              >
+                Subscribe
+              </h5>
+              <p class="text-gray-600 mb-4 dark:text-slate-50">
+                Subscribe to newsletter
+              </p>
+              <input
+                class="mb-3 text-gray-700 bg-gray-100 p-2 w-full rounded-t hover:border-purple-600 transition-all duration-300 ease"
+                placeholder="your name"
+                type="email"
+              />
+              <button
+                class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300 ease"
+              >
+                Subscribe
+              </button>
+            </div>
+            <!-- divider -->
+            <div class="border border-dotted md:hidden lg:block"></div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="bordet-t mt-10 py-10 px-2">
+        <div class="md:flex">
+          <div class="w-full mb-5 md:w-2/5">
+            <h6 class="font-semibold text-gray-700 dark:text-gray-50 mb-3">
+              Comapany
+            </h6>
+            <ul>
+              <li>
+                <a
+                  class="inline-block text-gray-500 dark:text-gray-50 py-2 hover:underline transition-all duration-300 ease"
+                  href="#"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block text-gray-500 dark:text-gray-50 py-2 hover:underline transition-all duration-300 ease"
+                  href="#"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full md:w-2/5">
+            <h6 class="font-semibold text-gray-700 dark:text-gray-50 mb-3">
+              Content
+            </h6>
+            <ul>
+              <li>
+                <a class="footer-link" href="#">Block</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Policy</a>
+              </li>
+              <li>
+                <a class="footer-link text-indigo-800" href="#">Documention</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-fullmd:w-1/5">
+            <h6 class="font-semibold text-gray-700 dark:text-gray-50 mb-4">
+              Contact Us
+            </h6>
+            <ul class="">
+              <li class="mr-2">
+                <a class="footer-link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="mr-2">
+                <a class="footer-link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="mr-2">
+                <a class="footer-link text-indigo-800" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 h-7 stroke-emerald-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "TailwindStandart",
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "build": "tailwindcss build -i src/main.css -o public/style.css --watch"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
+  }
+}
