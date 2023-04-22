@@ -1,2 +1,2 @@
-# TailwindStandart
+# Tailwind
 
